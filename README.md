@@ -20,3 +20,11 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+Answer:
+
+The runtime of the function to convert an adjacency matrix to an adjacency list is $\Theta (n^2)$ where $n$ is the number of vertices in the matrix. This is because the function, using the nested for-loops, must iterate through each element in a row ($n$ times) and each element in a column ($n$ times). This results in a runtime of $\Theta (n^2)$.
+
+Bonus Answer:
+
+The runtime of the function to convert an adjacency list to an adjacency matrix is also $\Theta (n^2)$ where $n$ is the number of elements in the list. The first time the function iterates through the adjacency list, it initializes the new matrix which takes $n$ time. The second time the function iterates through the adjacency list, it fills in the nodes where they need to be which also takes $n$ time. Through both iterations, the function has a runtime of $\Theta (n^2)$.
